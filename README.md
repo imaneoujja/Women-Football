@@ -1,14 +1,14 @@
 # Project of Data Visualization (COM-480)
 
-| Student's name | SCIPER |
-|----------------|--------|
-| Imane Oujja    | 344332 |
-| Shyamala Vasireddy | 423053 |
-| Rim Abkari     | 344316 |
+| Team members |
+|--------------|
+| Imane Oujja |
+| Shyamala Vasireddy |
+| Rim Abkari |
 
 [**Milestone 1**](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
-## Milestone 1 (20th March, 5pm)
+## Milestone 1
 
 ### Dataset
 
@@ -54,13 +54,13 @@ Our visual inspiration comes from [The Pudding](https://pudding.cool/) for their
 
 ---
 
-## Milestone 2 (17th April, 5pm)
+## Milestone 2
 
 Website : https://com-480-data-visualization.github.io/DVP/
 
 Report : [Milestone 2 Report](https://github.com/com-480-data-visualization/DVP/blob/master/Milestones/Milestone2.pdf)
 
-## Milestone 3 (29th May, 5pm)
+## Milestone 3
 
  **Screencast** : [Video Walkthrough](https://drive.google.com/file/d/1qZGAw3O_oByAsqgX97o9VKDP96bNKhKO/view?usp=sharing)
 
@@ -141,6 +141,8 @@ DVP/
 │   ├── img_hero4.jpg       # Hero collage — player 4
 │   └── img_salma.webp      # Salma Paralluelo (Spain)
 ├── Milestones/             # Milestone 1, 2, 3 deliverables
+├── eda.ipynb               # Exploratory data analysis (Milestone 1)
+├── requirements.txt        # Python packages for the EDA notebook
 ├── process_book.pdf        # Full design and development documentation
 └── README.md               # This file
 ```
@@ -151,11 +153,22 @@ DVP/
  
 | Dataset | Source | Records |
 |---------|--------|---------|
-| Women's International Football Results | [Kaggle](https://www.kaggle.com/) | 11,177 matches |
+| Women's International Football Results | [Kaggle](https://www.kaggle.com/datasets/martj42/womens-international-football-results) | 11,177 matches |
 | World Cup Prize Money | FIFA official communications | 9 editions |
 | World Cup Attendance | FIFA official communications | 9 editions |
  
 Data preprocessing done in Python (pandas). All datasets bundled into `data/bundle.js`.
+
+### Re-running the exploratory analysis
+
+The EDA is in [`eda.ipynb`](eda.ipynb). It reads the raw Kaggle files, which are not included in this repo:
+
+1. Download `results.csv`, `goalscorers.csv` and `shootouts.csv` from the [Kaggle dataset](https://www.kaggle.com/datasets/martj42/womens-international-football-results) into `data/`.
+2. Run:
+   ```bash
+   pip install -r requirements.txt
+   jupyter notebook eda.ipynb
+   ```
  
 ---
  
@@ -184,12 +197,3 @@ Data preprocessing done in Python (pandas). All datasets bundled into `data/bund
 - **World map animation** — year slider or auto-play
 - **Head-to-head explorer** — select any two nations for radar + H2H record
 - **Story Guide** — floating button with 8 pre-scripted data stories
----
- 
-
-*80% of the final grade*
-
-### Late policy
-
-- < 24h: 80% of the grade for the milestone
-- < 48h: 70% of the grade for the milestone

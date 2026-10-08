@@ -1,10 +1,8 @@
 # Project of Data Visualization (COM-480)
 
-| Student's name | SCIPER |
-|----------------|--------|
-| Imane Oujja    | 344332 |
-| ______________ | ______ |
-| ______________ | ______ |
+| Team members |
+|--------------|
+| Imane Oujja |
 
 [**Milestone 1**](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
@@ -34,7 +32,7 @@ We think this topic works well because it has a clear narrative arc, the data su
 
 ### Exploratory Data Analysis
 
-We ran a full EDA in our [notebook](eda.ipynb). Here are the highlights:
+We ran a full EDA in our [notebook](../eda.ipynb). Here are the highlights:
 
 The dataset spans 1956–2025 with 11,177 matches. The United States leads all-time with 465 wins, followed by Germany and Sweden. Goals per match have barely declined over time (3.78 in the early era vs 3.51 post-2015), but the biggest blowouts have disappeared — the sport is getting more competitive. The craziest match? Cameroon 2–24 South Africa in 2006.
 
